@@ -1,26 +1,170 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #1f2022;
+  --foreground: #ffffff;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.28);
+  color: #ffffff;
+}
+
+@layer components {
+  .hamburger {
+    @apply flex flex-col justify-center items-center w-10 h-10 cursor-pointer relative z-[101];
+  }
+
+  .hamburger span {
+    @apply block w-6 h-0.5 bg-white transition-all duration-300 ease-in-out;
+  }
+
+  .hamburger span:not(:last-child) {
+    @apply mb-1;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .mobile-menu {
+    @apply fixed top-20 right-0 w-64 bg-[#2a2b2e] shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-[99];
+  }
+
+  .mobile-menu.active {
+    @apply translate-x-0;
+  }
+
+  .mobile-menu ul {
+    @apply flex flex-col p-0 m-0 list-none;
+  }
+
+  .mobile-menu li {
+    @apply border-b border-gray-700;
+  }
+
+  .mobile-menu a {
+    @apply block px-6 py-4 text-white hover:bg-[#3a3b3e] transition-colors;
+  }
+
+  .cards {
+    @apply grid w-[calc(100vw-40px)] gap-2 justify-items-center mx-auto;
+    grid-template-columns: repeat(auto-fill, minmax(220px, auto));
+  }
+
+  .card {
+    @apply relative flex flex-col items-center bg-transparent z-0 m-[5px_10px] h-[300px] w-[200px] transition-transform duration-200 ease-out;
+  }
+
+  .card:hover {
+    @apply scale-110 z-10 drop-shadow-[0_0_5px_rgba(0,0,0,0.13)];
+  }
+
+  body:has(.card:hover) .card:not(:hover) {
+    @apply opacity-80;
+  }
+
+  .profile {
+    @apply mt-5 h-[200px] relative transition-all duration-200 ease-in;
+    clip-path: circle(70px at center);
+  }
+
+  .halo {
+    @apply absolute top-[50px] w-[140px] h-[140px] bg-transparent border-4 border-transparent rounded-full transition-all duration-150 ease-out;
+  }
+
+  .card:hover .halo {
+    @apply border-white;
+  }
+
+  .name {
+    @apply mt-2.5 text-white text-2xl font-semibold transition-colors duration-200 ease-in;
+  }
+
+  .role {
+    @apply mt-1 text-gray-400 text-2xl font-normal transition-colors duration-200 ease-in;
+  }
+
+  .content details {
+    @apply flex flex-col items-center mb-5 w-full;
+  }
+
+  .content summary {
+    @apply block w-full max-w-2xl mx-auto cursor-pointer relative list-none outline-none pl-8;
+  }
+
+  .content summary::-webkit-details-marker {
+    @apply hidden;
+  }
+
+  .content summary::before {
+    content: "";
+    @apply absolute border-t-[0.5em] border-t-transparent border-b-[0.5em] border-b-transparent border-l-[0.75em] border-l-white transition-transform duration-200 ease-out;
+    left: 0.5em;
+    top: 0.4em;
+  }
+
+  .content details[open] summary::before {
+    transform: rotate(90deg);
+  }
+
+  .content ul {
+    @apply list-none p-0 m-0 w-full text-center;
+  }
+
+  .content li {
+    @apply text-xl my-1 text-gray-300;
+  }
+
+  .content h2 {
+    @apply text-xl font-medium;
+  }
+
+  .content h3 {
+    @apply font-extralight text-xl text-center my-4 text-white px-4;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  .content a {
+    @apply block text-center text-xl font-light underline text-blue-300 hover:text-blue-200 mt-2;
+  }
+
+  .images {
+    @apply mt-5 flex justify-around w-full flex-wrap gap-4;
+  }
+
+  .images img {
+    @apply h-48 border border-white object-cover;
+  }
 }
