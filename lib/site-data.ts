@@ -120,7 +120,7 @@ export const awardSections = [
     awards: ["South Korea Championship - Finalist Alliance - Captain"],
     notes: [],
     images: ["/images/awards/2025/design.png",
-      "/images/awards/2025/robot.jpg"
+      "/images/awards/2025/robot.png"
     ],
   },
 ] as const;
