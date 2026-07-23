@@ -23,7 +23,7 @@ export function SiteHeader({
       <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3" onClick={onMenuClose}>
           <Image
-            src="/images/logo_spirit_mark.png"
+            src="/images/spiritnewlogo.png"
             alt="SPIRIT mark"
             width={56}
             height={56}
