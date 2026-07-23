@@ -95,7 +95,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
         {showChrome ? (
           <header className="w-screen h-20 sticky top-0 left-0 z-[100] flex items-center justify-between bg-[#1f2022] shadow-lg px-4">
             <Link href="/" className="flex items-center no-underline">
-              <img src="/images/logo_spirit_mark.png" className="h-16" alt="mask" id="logo_mark" />
+              <img src="/images/spiritnewlogo.png" className="h-16" alt="mask" id="logo_mark" />
               <img src="/images/logo_spirit_text.png" className="h-10 -ml-5" alt="SPIRIT" id="logo_text" />
             </Link>
 

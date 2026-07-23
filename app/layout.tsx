@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     default: "SPIRIT",
     template: "SPIRIT | %s",
   },
-  description: "SPIRIT FTC 팀의 소개, 수상 내역, 문의 채널을 모은 공식 웹사이트입니다.",
+  description: "FTC SPIRIT",
 };
 
 export default function RootLayout({

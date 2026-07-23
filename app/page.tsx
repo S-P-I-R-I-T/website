@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div id="contents" className="flex-1 flex justify-center items-center w-full px-4">
       <div id="landing_image" className="w-full max-w-xl flex flex-col items-center">
-        <Image src="/images/spiritnewlogo.png.png" alt="MASK" id="landing_mask" className="h-96 object-contain" width={384} height={384} priority />
+        <Image src="/images/spiritnewlogo.png" alt="MASK" id="landing_mask" className="h-96 object-contain" width={384} height={384} priority />
 
         <h2 className="text-[#e9ecef] cursor-default text-2xl my-5 font-bold">
           team 25323
