@@ -119,6 +119,8 @@ export const awardSections = [
     season: "DECODE",
     awards: ["South Korea Championship - Finalist Alliance - Captain"],
     notes: [],
-    images: ["/images/awards/2025/design.png"],
+    images: ["/images/awards/2025/design.png",
+      "/images/awards/2025/robot.jpg"
+    ],
   },
 ] as const;
