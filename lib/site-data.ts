@@ -42,7 +42,7 @@ export const teamSections = [
     ],
   },
   {
-    title: "S.P.I.R.I.T-25324",
+    title: "S.P.I.R.I.T 25324",
     subtitle: "",
     members: [
       {
@@ -97,7 +97,7 @@ export const teamSections = [
     ],
   },
   {
-    title: "S.P.I.R.I.T-25323",
+    title: "S.P.I.R.I.T 25323",
     subtitle: "",
     members: [
       {
