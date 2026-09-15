@@ -111,7 +111,7 @@ export const teamSections = [
         nameEn: "S.W Jeong",
         roleKo: "하드웨어",
         roleEn: "hardware",
-        image: "/images/face/M.G Ji.png",
+        image: "/images/face/S.W Jeong.png",
       },
       {
         nameKo: "서동범",
