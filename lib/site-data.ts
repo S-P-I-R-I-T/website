@@ -46,17 +46,10 @@ export const teamSections = [
     subtitle: "",
     members: [
       {
-        nameKo: "박서우",
-        nameEn: "S.W Park",
-        roleKo: "소프트웨어",
-        roleEn: "software",
-        image: "/images/face/S.W Park.png",
-      },
-      {
         nameKo: "한은율",
         nameEn: "E.Y Han",
-        roleKo: "하드웨어",
-        roleEn: "hardware",
+        roleKo: "팀장 | 하드웨어",
+        roleEn: "Leader | hardware",
         image: "/images/face/E.Y Han.png",
       },
       {
@@ -67,11 +60,11 @@ export const teamSections = [
         image: "/images/face/H.E Song.png",
       },
       {
-        nameKo: "이태율",
-        nameEn: "T.Y Lee",
-        roleKo: "하드웨어",
-        roleEn: "hardware",
-        image: "/images/face/T.Y Lee.png",
+        nameKo: "박서우",
+        nameEn: "S.W Park",
+        roleKo: "소프트웨어",
+        roleEn: "software",
+        image: "/images/face/S.W Park.png",
       },
       {
         nameKo: "신소민",
@@ -80,12 +73,55 @@ export const teamSections = [
         roleEn: "manager",
         image: "/images/face/S.M Shin.png",
       },
+      {
+        nameKo: "정현준",
+        nameEn: "H.J Jeong",
+        roleKo: "하드웨어",
+        roleEn: "hardware",
+        image: "",
+      },
+      {
+        nameKo: "추지호",
+        nameEn: "J.H Chu",
+        roleKo: "소프트웨어",
+        roleEn: "software",
+        image: "/images/face/J.H Chu.jpg",
+      },
+      {
+        nameKo: "조채훈",
+        nameEn: "C.H Jo",
+        roleKo: "소프트웨어",
+        roleEn: "software",
+        image: "/images/face/C.H Jo.webp",
+      },
     ],
   },
   {
     title: "S.P.I.R.I.T-25323",
     subtitle: "",
-    members: [],
+    members: [
+      {
+        nameKo: "지민건",
+        nameEn: "M.G Ji",
+        roleKo: "팀장 | 소프트웨어",
+        roleEn: "Leader | software",
+        image: "/images/face/M.G Ji.jpg",
+      },
+      {
+        nameKo: "정성원",
+        nameEn: "S.W Jeong",
+        roleKo: "하드웨어",
+        roleEn: "hardware",
+        image: "/images/face/M.G Ji.png",
+      },
+      {
+        nameKo: "서동범",
+        nameEn: "D.B Seo",
+        roleKo: "하드웨어",
+        roleEn: "hardware",
+        image: "/images/face/D.B Seo.jpg",
+      },
+    ],
   },
 ] as const;
 
