@@ -3,7 +3,6 @@ export const navigationLinks = [
   { href: "/about", label: "About us", short: "02" },
   { href: "/awards", label: "Awards", short: "03" },
   { href: "/contact", label: "Contact", short: "04" },
-  { href: "/apply", label: "Apply", short: "05" },
 ] as const;
 
 export const socialLinks = [

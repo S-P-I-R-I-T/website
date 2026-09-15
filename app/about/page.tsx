@@ -21,7 +21,11 @@ export default function AboutPage() {
       </div>
 
       <h1 className="w-full pl-[35px] text-3xl font-bold my-5">S.P.I.R.I.T-25323</h1>
-      <div className="cards" id="25323" />
+      <div className="cards" id="25323">
+        {teamSections[2].members.map((member) => (
+          <MemberCard key={member.nameEn} {...member} />
+        ))}
+      </div>
     </div>
   );
 }
