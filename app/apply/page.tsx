@@ -1,9 +1,7 @@
-import Link from "next/link";
+import { redirect } from "next/navigation";
 
 export default function ApplyPage() {
-  return (
-    <div>
-      <p>신청자 모집이 마감되었습니다.</p>
-    </div>
+  redirect(
+    "https://docs.google.com/forms/d/e/1FAIpQLSfX44tkeSxqtXyNymHFBC6i_I8xTQOH1rcXJ0NcpEdPrIyjfg/viewform?usp=publish-editor",
   );
 }
